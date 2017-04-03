@@ -1,0 +1,20 @@
+#output, #showOutput {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.doneButton {
+  float: right;
+}
+
+.strikeThrough {
+text-decoration: line-through;
+};
