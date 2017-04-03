@@ -19,7 +19,8 @@ $(document).ready(function() {
 
     $("#output").append("<li><span class='clickable'>" + newTask.taskName + "</span><button class='doneButton'>Complete</button></li><br></br>");
 
-    $("#output").show();
+    $("#output, #hide-output").show();
+
 
     $(".clickable").last().click(function() {
       $("#showOutput").show();
@@ -33,8 +34,10 @@ $(document).ready(function() {
     $("#datepicker").val("");
 
 
-    $(".doneButton").click(function(){
-      $(this).prev().toggleClass("strikeThrough");
+    $(".doneButton").last().click(function(){
+      $(this).prev().toggleClass("taskComplete");
+
+      
     });
   });
 });

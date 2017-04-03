@@ -1,4 +1,4 @@
-#output, #showOutput {
+#output, #showOutput, #hide-output {
   display: none;
 }
 
@@ -15,6 +15,16 @@
   float: right;
 }
 
-.strikeThrough {
+.taskComplete {
 text-decoration: line-through;
-};
+color: red;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.hideShowOutput {
+  display: none;
+}
