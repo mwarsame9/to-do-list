@@ -4,6 +4,10 @@ function Tasks(taskName, description, dueDate) {
   this.dueDate = dueDate;
 }
 
+Tasks.prototype.dueTask = function() {
+  return this.taskName + " " + this.dueDate;
+}
+
 
 
 
@@ -18,7 +22,7 @@ $(document).ready(function() {
 
     var newTask = new Tasks(taskNameInput, descriptionInput, dueDateInput);
 
-    $("#output").append("<li><span class='clickable'>" + newTask.taskName + "</span><button class='doneButton'>Complete</button></li><br></br>");
+    $("#output").append("<li><span class='clickable'>" + newTask.dueTask() +  "</span><button class='doneButton'>Complete</input></button></li><br></br>");
 
     $("#output, #hide-output").show();
 
