@@ -7,10 +7,11 @@ function Tasks(taskName, description, dueDate) {
 
 
 
+
+
 $(document).ready(function() {
   $(".form-one").submit(function(event) {
     event.preventDefault();
-
     var taskNameInput = $("input[name=taskName]").val();
     var descriptionInput = $("input[name=description]").val();
     var dueDateInput = $("#datepicker").val();
@@ -37,7 +38,7 @@ $(document).ready(function() {
     $(".doneButton").last().click(function(){
       $(this).prev().toggleClass("taskComplete");
 
-      
+
     });
   });
 });
